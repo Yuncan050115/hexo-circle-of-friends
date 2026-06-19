@@ -1,0 +1,30 @@
+[package]
+name = "downloader"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+# in download.rs
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
+data_structures = { path = "../data_structures" }
+reqwest = { workspace = true }
+reqwest-middleware = { workspace = true }
+chrono = { workspace = true }
+url = { workspace = true }
+tools = { path = "../tools" }
+tokio = { workspace = true }
+regex = { workspace = true }
+reqwest-retry = { workspace = true }
+tracing = { workspace = true }
+futures = { workspace = true }
+tokio-stream = { workspace = true }
+
+# in crawler.rs
+feed-rs = { workspace = true }
+nipper = { workspace = true }
+html-escape = "0.2"
